@@ -1,0 +1,37 @@
+{
+  "name": "stanford-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferueda/stanford-algorithms.git"
+  },
+  "keywords": [
+    "cs",
+    "algorithms",
+    "data",
+    "structures"
+  ],
+  "author": "Felipe Rueda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferueda/stanford-algorithms/issues"
+  },
+  "homepage": "https://github.com/ferueda/stanford-algorithms#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "algorithms/*.js",
+      "data-structures/*.js"
+    ]
+  }
+}
