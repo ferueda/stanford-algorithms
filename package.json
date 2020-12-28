@@ -1,7 +1,7 @@
 {
   "name": "stanford-algorithms",
   "version": "1.0.0",
-  "description": "",
+  "description": "My solutions to Tim Roughgarden's Stanford Specialization on Algorithms and Data Structures (https://www.coursera.org/specializations/algorithms)",
   "main": "index.js",
   "scripts": {
     "test": "jest",
