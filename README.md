@@ -1,1 +1,1 @@
-My solutions and algorithms implementations to Tim Roughgarden's Stanford Specialization on [CS Algorithms](https://www.coursera.org/specializations/algorithms)
+My solutions and algorithm implementations to Tim Roughgarden's Stanford Specialization on [CS Algorithms](https://www.coursera.org/specializations/algorithms)
