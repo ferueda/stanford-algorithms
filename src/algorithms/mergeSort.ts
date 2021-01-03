@@ -26,4 +26,4 @@ function mergeSort(list: number[]): number[] {
   return output.concat(left.slice(leftCounter)).concat(right.slice(rightCounter));
 }
 
-module.exports = mergeSort;
+export default mergeSort;
