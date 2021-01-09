@@ -10,7 +10,7 @@ describe('mergeSort', () => {
   });
 
   test('it returns sorted array from unsorted one including repeated values', () => {
-    expect(mergeSort([7, 7, 0, 2, -8, 81])).toEqual([-8, 0, 2, 7, 7, 81]);
+    expect(mergeSort([7, 7, 0, 2, -8, 81, 7])).toEqual([-8, 0, 2, 7, 7, 7, 81]);
   });
 
   test('it returns empty array from empty input', () => {
