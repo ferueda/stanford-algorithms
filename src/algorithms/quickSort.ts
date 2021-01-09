@@ -1,5 +1,9 @@
+function swap(list: number[], lower: number, higher: number): void {
+  [list[lower], list[higher]] = [list[higher], list[lower]];
+}
+
 function partition(list: number[], lower: number, higher: number): number {
-  const pivot = list[Math.floor((lower + higher) / 2)];
+  const pivot = list[Math.floor(Math.random() * (higher - lower + 1) + lower)];
 
   while (lower <= higher) {
     while (list[lower] < pivot) {
@@ -11,7 +15,7 @@ function partition(list: number[], lower: number, higher: number): number {
     }
 
     if (lower <= higher) {
-      [list[lower], list[higher]] = [list[higher], list[lower]];
+      swap(list, lower, higher);
 
       lower += 1;
       higher -= 1;
