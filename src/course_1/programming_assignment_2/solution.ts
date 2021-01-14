@@ -1,4 +1,4 @@
-import countInversions from '../../countInversions';
+import countInversions from '../../algorithms/countInversions';
 import fs from 'fs';
 
 const integerArray = fs
