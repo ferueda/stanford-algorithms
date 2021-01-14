@@ -14,7 +14,7 @@ class Heap {
     if (this.data[parentIndex] <= element) return;
 
     while (currentIndex > 0) {
-      // swapping parent and children using destructuring
+      // swapping parent and child using destructuring
       [this.data[parentIndex], this.data[currentIndex]] = [
         this.data[currentIndex],
         this.data[parentIndex],
