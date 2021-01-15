@@ -5,13 +5,11 @@ class Heap {
     this.data = [];
   }
 
-  insert(element: number): void {
-    this.data.push(element);
-
+  _heapify(): void {
     let currentIndex = this.data.length - 1;
     let parentIndex = Math.floor((currentIndex - 1) / 2);
 
-    if (this.data[parentIndex] <= element) return;
+    if (this.data[parentIndex] <= this.data[currentIndex]) return;
 
     while (currentIndex > 0) {
       // swapping parent and child using destructuring
@@ -23,6 +21,15 @@ class Heap {
       currentIndex = parentIndex;
       parentIndex = Math.floor((currentIndex - 1) / 2);
     }
+  }
+
+  getMin(): number {
+    return this.data[0];
+  }
+
+  insert(element: number): void {
+    this.data.push(element);
+    this._heapify();
   }
 }
 
