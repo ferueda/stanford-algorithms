@@ -69,4 +69,46 @@ describe('Heap', () => {
       expect(heap.data).toEqual([1, 1, 9, 9, 1, 9, 9, 9, 9, 9]);
     });
   });
+
+  describe('removeMin()', () => {
+    test('it should remove min element from data', () => {
+      heap.insert(2);
+      heap.removeMin();
+
+      expect(heap.data).toHaveLength(0);
+      expect(heap.data).toEqual([]);
+    });
+
+    test('it should remove min node from a 3 node Heap', () => {
+      heap.insert(1);
+      heap.insert(2);
+      heap.insert(3);
+      heap.removeMin();
+
+      expect(heap.data).toHaveLength(2);
+      expect(heap.data).toEqual([2, 3]);
+
+      heap.removeMin();
+
+      expect(heap.data).toHaveLength(1);
+      expect(heap.data).toEqual([3]);
+    });
+
+    test('it should remove min node and update nodes order from a 5 node Heap', () => {
+      heap.insert(2);
+      heap.insert(1);
+      heap.insert(6);
+      heap.insert(3);
+      heap.insert(1);
+      heap.removeMin();
+
+      expect(heap.data).toHaveLength(4);
+      expect(heap.data).toEqual([1, 2, 6, 3]);
+
+      heap.removeMin();
+
+      expect(heap.data).toHaveLength(3);
+      expect(heap.data).toEqual([2, 3, 6]);
+    });
+  });
 });
